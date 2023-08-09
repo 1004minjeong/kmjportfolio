@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*     background-color: #fff; */
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    /*     background-blend-mode: soft-light; */
+    /* 칼라가 흰색이여야한다 */
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fdd6f3;
+    mix-blend-mode: difference;
+    /* 칼라가 흰색이여야한다 */
+    font-size: 10rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+h3 {
+    position: fixed;
+    top: 65%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fdd6f3;
+    mix-blend-mode: difference;
+    /* 칼라가 흰색이여야한다 */
+    font-size: 2rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+
+main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.slider-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155vw;
+    height: 100%;
+}
+
+.slider-inner-one {
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-inner-one .img.p1 img {
+    width: 300px;
+}
+
+.slider-inner-two {
+    position: absolute;
+    left: 30vh;
+    top: 48vh;
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    transition: all 0.5s ease-in-out;
+    width: 385px;
+    padding-top: 20px;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}
+
+.slider-inner-two .img.p2 img {
+    width: 300px;
+}
+
+/* 컴퓨터 */
+.imacbckgd.back1:hover,
+.imacbckgd.back2:hover,
+.imacbckgd.back3:hover {
+    background-position: bottom;
+}/* 백그라운드움직이는거 */
+
+.imacbckgd.back1 {
+    position: absolute;
+    left: 49.7%;
+    top: 21%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 35%;
+    background: url(../assets/img/phproll1.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;    
+    border-radius: 5px;
+}
+.imacbckgd.back2 {
+    position: absolute;
+    left: 49.7%;
+    top: 21%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 35%;
+    background: url(../assets/img/reactroll.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;    
+    border-radius: 5px;
+}
+.imacbckgd.back3 {
+    position: absolute;
+    left: 49.7%;
+    top: 27%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 52%;
+    background: url(../assets/img/naverroll.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;    
+    border-radius: 5px;
+}
+
+
+
+
+
+/* 폰타블렛종류 */
+.ipad{
+    position: absolute;
+    left: 51.7%;
+    top: 21%;
+    transform: translate(-50%, -50%);
+    width: 96%;
+    height: 45%;
+}
+.iphone{
+    position: absolute;
+    left: 81.7%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 45%;
+    background: url(../assets/img/iphone.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.ipadcont.con1{
+    position: absolute;
+    left: 49.7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 89%;
+    height: 81%;
+    background: url(../assets/img/musignIpad.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+
+
+.iphonecont.con1 {
+    position: absolute;
+    left: 49.7%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 62%;
+    height: 93%;
+    background: url(../assets/img/musignMobile.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.ipadcont.con2{
+    position: absolute;
+    left: 49.7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 89%;
+    height: 81%;
+    background: url(../assets/img/responPad.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.iphonecont.con2 {
+    position: absolute;
+    left: 49.7%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 62%;
+    height: 93%;
+    background: url(../assets/img/responPhone.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.ipadcont.con3{
+    position: absolute;
+    left: 49.7%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 86%;
+    background: url(../assets/img/sushiIpad.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.iphonecont.con3 {
+    position: absolute;
+    left: 49.7%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 62%;
+    height: 93%;
+    background: url(../assets/img/sushi_mobile.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.ipadcont.con4{
+    position: absolute;
+    left: 49.7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 89%;
+    height: 81%;
+    background: url(../assets/img/megaboxtablet.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.iphonecont.con4 {
+    position: absolute;
+    left: 49.7%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 62%;
+    height: 93%;
+    background: url(../assets/img/megabox_mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 3s;
+    border-radius: 10px;
+}
+
+.ipad:hover .ipadcont {
+    background-position: bottom;
+}
+
+.iphone:hover .iphonecont {
+    background-position: bottom;
+}/* 백그라운드움직이는거 */
+
+.ipad.one{
+    position: absolute;
+    left: 50.7%;
+    top: 27%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    height: 55%;
+}
+.iphone.one{
+    position: absolute;
+    left: 83.7%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    width: 53%;
+    height: 63%;
+}
+
+.ipad.two{
+    position: absolute;
+    left: 51.7%;
+    top: 21%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    height: 55%;
+}
+.iphone.two{
+    position: absolute;
+    left: 83.7%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    width: 53%;
+    height: 63%;
+}
+
+div.ipad {
+    background: url(../assets/img/ipad.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+div.iphone {
+    background: url(../assets/img/iphone.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/*-----------모달---------------*/
+.mfp-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1042;
+    overflow: hidden;
+    background: #0b0b0b;
+    opacity: 0.5;
+}
+
+.white-popup-block {
+    width: 433px;
+    padding: 70px 70px 100px !important;
+    border-radius: 10px;
+    margin: 40px auto;
+    position: relative;
+    background: #FFF;
+    text-align: left;
+}
+
+
+/*사이트 바로가기 버튼*/
+.btn-primary {
+    border-width: 2px;
+    border-color: #ff2ea9;
+    margin-bottom: 50px;
+    background-color: #ff2ea9;
+    font: 1.5em 'Jeju Gothic';
+}
+
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary {
+    border-color: #ff2ea9;
+    background-color: white;
+    color: #ff2ea9;
+}
+
+
+hr {
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: 1em 0;
+    border-top: 1px solid #ccc;
+    display: block;
+}
+
+
+
+/*모달 x버튼*/
+.modal_i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.modal_h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.modal_h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.modal_p {
+    margin-bottom: 50px;
+    color: #707070;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+}
+
+/*모달 안 컨텐츠*/
+.white-popup-block>div {
+    /*이미지 감싸는 div*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.white-popup-block>div>img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.link {}
+
+.link a {
+    color: #0b0b0b;
+    background-color: rgb(158, 196, 245);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  font-family: 'Nanum Myeongjo', serif;
+
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(174, 228, 255) 50%, rgb(251, 224, 255) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  padding: 0.875rem 0;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 34vh;
+  margin: 10%;
+  
+}
+
+.text {
+  font-size: 2.5vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgba(190, 169, 169, 0.781);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+
+
+  border-bottom: 1px solid #bfbfb6;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf9ef;
+  color: #2b1616;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.img{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  pointer-events: none;
+  }
+.img-1{background: url(../assets/img/bird4.png)no-repeat center;
+  background-size: cover;} /* = 0.8s */
